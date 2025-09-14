@@ -1,5 +1,9 @@
+*{
+  cursor: url('/cursor/cursor-gold.png') 8 8, auto;
+}
 #root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
