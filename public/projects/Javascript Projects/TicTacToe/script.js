@@ -1,5 +1,5 @@
 const gameContainer = document.querySelector("#gameContainer");
-const Ximg = '<img src="./o.png" class="squareImg"></img>';
+const Ximg = '<img src="./images/X.png" class="squareImg"></img>';
 let playerTurn = true;
 let gameState = ["","","","","","","","",""];
 let gameOver = false;

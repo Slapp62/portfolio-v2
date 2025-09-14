@@ -7,3 +7,24 @@
   box-sizing: border-box;
 }
 
+.button-outline {
+  transition: 0.3s;
+  background-color: rgb(30, 70, 70);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: white;
+}
+
+.button-outline:hover {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(46, 104, 104);
+}
+
+.button-hover {
+  transition: 0.3s;
+  border-radius: 10px;
+  background-color: rgb(30, 70, 70);
+}
+.button-hover:hover{
+  background-color: rgb(40, 135, 135);
+}

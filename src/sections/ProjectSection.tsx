@@ -1,19 +1,8 @@
-import { htmlProjects } from "../projectData/htmlCssData";
-import { jsProjects } from "../projectData/javascriptData";
+import { htmlDescription, htmlProjects } from "../projectData/htmlCssData";
+import { javascriptDescription, jsProjects } from "../projectData/javascriptData";
 import ProjectsGrid from "../components/ProjectsGrid";
 import MERNStackSite from "../components/mernStackSite";
 
-const htmlDescription = {
-  title: "HTML & CSS Projects",
-  description: "A collection of projects built using HTML, CSS, and Bootstrap.",
-  tech: ["HTML", "CSS", "Bootstrap"]
-}
-
-const javascriptDescription = {
-  title: "Javascript Projects",
-  description: "A collection of projects built using HTML, CSS, and Javascript.",
-  tech: ["HTML", "CSS", "Javascript"]
-}
 
 const CardSection = () => {
   return (

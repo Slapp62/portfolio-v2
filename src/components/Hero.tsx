@@ -13,7 +13,9 @@ export const Hero = () => {
         className="hero-content flex flex-col items-center justify-center h-[80%] w-[50%] p-5 border border-white rounded-lg text-white text-center">
         <h1 className="text-5xl font-bold ">Simcha Lapp</h1>
         <h2 className="text-2xl p-5">Full Stack Web Developer</h2>
-        <p className="w-3/4">I am a full stack web developer with a passion for creating dynamic and user-friendly web applications.</p>
+        <p className="w-3/4 text-lg">
+          I am a full stack web developer with a passion for creating beautiful, intuitive, and dynamic web applications. As an analytical problem solver, quick learner, and team player, I am always looking for new challenges and opportunities to learn and broaden my skillset. 
+        </p>
       </motion.div>
 
       <motion.div 
@@ -24,7 +26,11 @@ export const Hero = () => {
         }} 
         className="hero-content flex flex-col items-center justify-center h-[80%] w-[30%] p-5 text-white">
         <img src="./profile pic.jpg" alt="profile" className="rounded-2xl object-cover object-center" />
-        <button className="mt-10 bg-green-800 rounded-2xl px-10 py-5">Download Resume/CV</button>
+
+        <button 
+          className="mt-10 button-outline px-10 py-3">
+            <a href="./Simcha Lapp Resume 2025 (Updated).pdf" target="_blank" >View Resume</a>
+        </button>
         
       </motion.div>
     </div>
