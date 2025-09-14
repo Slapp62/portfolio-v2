@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.start-regular {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.hidden{
+    display: none;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+}
+
+h1{
+    margin-top: 40px;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#difficulty{
+    animation: blink 1s infinite;
+}
+
+h2, h1{
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(113, 239, 128);
+}
+
+#diffSelect{
+    width: 40%;
+    margin-inline: auto;
+    margin-top: 20px;
+    text-align: center;
+
+    button{
+        border-radius: 5px;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr) ;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.square{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(222, 234, 199);
+}
+
+.question{
+    background-image: url(./images/question.png);
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#diffSelect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.button:hover{
+    background-color: rgb(1, 126, 126);
+}
+
+.button{
+    padding: 20px;
+    background-color: aqua;
+    font-size: 24px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+#matchTracker{
+    text-align: center;
+    line-height: 1.5;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 10px;
+}
+
+#gameEnd{
+    text-align: center;
+    margin: 50px auto;
+    width: fit-content;
+}

@@ -1,0 +1,142 @@
+.top-line {
+  height: 20px;
+  background-color: #FDBD03;
+}
+@media (max-width: 780px) {
+  .top-line {
+    width: 80%;
+    height: 10px;
+  }
+}
+
+.whatsapp {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+}
+
+.phone_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone {
+  height: 500px;
+  width: 350px;
+}
+@media (max-width: 760px) {
+  .phone {
+    margin-bottom: 50px;
+    height: 100px;
+    width: 70px;
+  }
+}
+
+.text_container h1 {
+  color: #FDBD03;
+  font: normal normal 900 66px/97px Heebo;
+}
+@media (max-width: 780px) {
+  .text_container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.text_container p {
+  margin-left: auto;
+  width: 60%;
+  font: normal normal normal 20px/29px Heebo;
+}
+@media (max-width: 780px) {
+  .text_container p {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.form {
+  width: 80%;
+}
+.form label {
+  font: normal normal bold 16px/24px Heebo;
+}
+@media (max-width: 780px) {
+  .form {
+    margin-inline: auto;
+    width: 90%;
+  }
+}
+
+.field {
+  border: none;
+  background-color: #E5EEFF;
+  border-bottom: 3px solid #FDBD03;
+  margin-top: 5px;
+}
+
+.row input {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  background-color: #FDBD03;
+  border: none;
+  font: normal normal bold 22px/30px Heebo;
+  width: 25%;
+}
+@media (max-width: 780px) {
+  .submit {
+    margin-inline: auto;
+    width: 100%;
+  }
+}
+
+.social-box {
+  margin-top: 50px;
+}
+@media (max-width: 780px) {
+  .social-box {
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  height: 80px;
+  width: 80px;
+  background-color: #FDBD03;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.314);
+}
+@media (max-width: 780px) {
+  .social {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 780px) {
+  .social img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.bottom-line {
+  height: 20px;
+  background-color: #FDBD03;
+}
+@media (max-width: 780px) {
+  .bottom-line {
+    height: 10px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

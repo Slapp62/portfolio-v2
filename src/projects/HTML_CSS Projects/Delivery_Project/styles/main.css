@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whatsapp_icon{
+    top: 40px;
+    left: 60px;
+    background: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.header_box{
+    background-color: #0EE1E1;
+    height: 400px;
+
+        h2{
+            font: normal normal 900 66px/97px Heebo;
+        }       
+        p{
+            font: normal normal normal 20px/29px Heebo;
+        }
+}
+
+.card{
+    border: none;
+    
+    h3{
+        color: #0EE1E1;
+        font: normal normal 900 30px/44px Heebo;
+    }
+
+    p{
+        font: normal normal normal 15px/22px Heebo; 
+    }
+}
+
+.icons{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #0EE1E1;
+}
+
+.main_box{
+    height: 750px;
+    font-weight: bold;
+}
+
+.main_box{
+    h2{
+        font: normal normal 900 46px/67px Heebo; 
+    }
+
+    p{
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    label{
+        font: normal normal bold 13px/19px Heebo;
+    }
+}
+
+.form{
+    background: #F0FFFF;
+}
+
+.submit{
+    background-color: #0EE1E1;
+    border: none;
+    padding: 10px;
+    height: 50px;
+    font: normal normal bold 20px/28px Heebo;
+}
+
+.input{
+    border: none;
+    border-bottom: 3px solid #0EE1E1;
+    background: rgba(255, 255, 255, 0.443);
+}
+
+.map{
+    background-color: #0EE1E1;
+
+    iframe{
+        max-width: 80%;
+        max-height: auto;
+        margin: auto;
+    }
+}
+
+.social_box {
+    height: 150px;
+}
+
+.icons {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.267);
+}
+
+.bottom_border{
+    background: #0EE1E1;
+    height: 10px;
+}
+
+
+@media (max-width:750px){
+    .whatsapp_icon{
+        background: none;
+        display: none;
+    }
+
+    .whatsapp_icon img {
+        display: none;
+    }
+
+    .box_icon{
+        height: 80px;
+        width: 80px;
+    }
+
+    .header_box h2 {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .card{
+        height: 90%;
+    }
+
+    .map{
+        height: auto;
+    }
+
+    iframe{
+        height: auto;
+        min-height: 300px;
+        width: 90%;
+    }
+
+    .main_box{
+        height: auto;
+    }
+
+    .social_box {
+        height: 200px;
+    }
+
+}

@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#project3_body{
+    background-image: linear-gradient(100deg, rgba(49, 235, 61, 0.601), rgba(9, 105, 15, 0.575));
+}
+
+.project_section {
+    background-color: lightgray;
+    height: auto;
+    font-family: "SUSE";
+}
+
+.green_bg{
+    background-image: linear-gradient(100deg, rgba(49, 235, 61, 0.601), rgba(9, 105, 15, 0.575));
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.316);
+}
+
+.back_btn{
+    margin: 10px 0px 0px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: azure;
+    transition: 0.3s;
+}
+
+.back_btn:hover{
+    background-color: rgb(196, 210, 210);
+}
+
+.main_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+}
+
+.main_container_project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid div{
+    border-radius: 15px;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(225, 225, 225, 0.819);
+    font-family: "SUSE";
+    color: black;
+    text-align: center;
+    grid-area: 1/1/3/3;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.319);
+    border: 1px solid black;
+}
+
+#text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;  
+    margin-bottom: 10px;
+}
+
+#text p, h2{
+    width: 100%;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#sign_up{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    gap: 10px;
+}
+
+
+
+#info{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    width: 200px;
+}
+
+#submit{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "SUSE";
+    background-color: rgb(11, 103, 37);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+#submit:hover{
+    background-color: rgb(18, 159, 58);
+}
+
+#image1{
+    background-image: url(../images/lion.jpg);
+    background-position: center top;
+    background-size: cover;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.319);
+}
+
+
+#image2 {
+    background-image: url(../images/lizard.jpg);
+    background-position: center top;
+    background-size: cover;
+    grid-row: span 2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.319);
+}
+
+#image3 {
+    background-image: url(../images/elephant.jpg);
+    background-position: top bottom;
+    background-size: cover;
+    grid-column: span 2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.319);
+}
+
+@media (max-width:1200px){
+    .main_container{
+        width: 80%;
+        height: 90vh;
+    }
+
+    .main_container_project{
+        width: 90%;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:950px) {
+    h2 {
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:780px) {
+    .main_container {
+        width: 90%;
+        height: 100vh;
+    }
+    #welcome{
+        grid-area: 1/1/3/4;
+    }
+    #image1{
+        grid-area: 3/1/4/2;
+    }
+    #image2 {
+        grid-area: 3/2/4/3;
+    }
+    #image3 {
+        grid-area: 3/3/4/4;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:580px) {
+    h2 {
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+}

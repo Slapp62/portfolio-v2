@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.squada-one-regular {
+    font-family: "Squada One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/*#endregion*/
+
+/*#region Project Styles */
+
+
+.login_container{
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side_image {
+    position: relative;
+    height: 100vh;
+    width: 60%;  
+    padding: 5px;
+    
+}
+
+.side_image img {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 15px;
+    left: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.404);
+}
+
+.login{
+    background-color: white;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 10px;
+}
+
+.login h1{
+    border-bottom: 2px solid navy;
+    width: 80%;
+    padding: 10px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.label-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 10px;
+    font-size: 25px;
+
+        label{
+            width: fit-content;
+        }
+}
+
+.email{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.credentials{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+
+#submit{
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color:navy;
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+}
+
+.help{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 10px;
+
+}
+
+/*#endregion */
+
+@media (max-width:800px){
+    .login_container{
+        flex-direction: column;
+    }
+
+    .side_image{
+        height: 50%;
+        width: 90%;
+        right: 20px;
+    }
+
+    .side_image img{
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .login{
+        height: 50%;
+        width: 100%;
+    }
+
+    .login h1{
+        width: 70%;
+        font-size: 30px;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    #submit{
+        margin-block: 15px;
+    }
+
+}

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+#contrast-layer{
+    background-color: rgba(0, 0, 0, 0.571);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-block: 10px;
+}
+
+.sort{
+    width: 200px;
+}
+
+.popupContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 200px;
+    margin: auto;
+    padding: 30px;
+    width: fit-content;
+    z-index: 9;
+    border-radius: 10px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.countryCard{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    max-height: 450px;
+    border: none;
+   
+    background-color: whitesmoke;
+    
+
+    img{
+        width: 100%;
+        height: 200px;
+        border-bottom: 3px groove #474747;
+      
+    }
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncates long text */
+}
+
+
+

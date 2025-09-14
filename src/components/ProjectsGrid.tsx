@@ -21,15 +21,38 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
         className="flex flex-col items-center justify-evenly w-[20%]">
         <h2>{projectDescription.title}</h2>
         <p>{projectDescription.description}</p>
-        <ul>{projectDescription.tech.map((tech : string) => <li>{tech}</li>)}</ul>
+        <ul>{projectDescription.tech.map((tech : string) => <li key={tech}>{tech}</li>)}</ul>
       </div>
-      <div 
-        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 w-[60%] border border-white rounded-2xl text-center  p-4 text-white">
+
+      <div
+        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 w-[60%] border border-white rounded-2xl text-center  p-4 text-white"
+      >
         {projectData.map((project : TProject) => (
-          <div key={project.id} className="project-card aspect-auto">
-            <img loading="lazy" src={project.image} alt={project.imageAlt} className='w-full h-full object-cover object-center '/>
-          </div>
-        ))}        
+          <motion.div 
+            key={project.id} 
+            className="project-card relative aspect-auto cursor-pointer"
+          >
+            <motion.img 
+              whileHover={{ opacity: 0 }}
+              loading="lazy" 
+              src={project.image} 
+              alt={project.imageAlt} 
+              className='w-full h-full object-cover object-center'
+            />
+            
+            <motion.div 
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity: 1 }}
+              className="absolute inset-0 bg-black flex flex-col items-center justify-center p-2 gap-3">
+              
+              <h4>{project.title}</h4>
+              <p className="text-sm">{project.description}</p>
+              <button
+                className="bg-green-800 rounded-2xl px-4 py-2"
+              ><a href={project.link}>View Project</a></button>
+
+            </motion.div>
+          </motion.div>))}
       </div>
     </motion.div>
   );

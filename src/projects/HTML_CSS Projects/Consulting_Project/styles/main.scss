@@ -1,0 +1,139 @@
+$primary:#FDBD03;
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.top-line{
+    height: 20px;
+    
+    background-color: $primary;
+
+        @media (max-width:780px) {
+           width: 80%;
+           height: 10px;
+        }
+}
+
+.whatsapp{
+    position:absolute;
+    top: 80px;
+    left: 80px;
+}
+
+.phone_box{
+    @include flex-center();
+}
+
+.phone{
+    height: 500px;
+    width: 350px;   
+        @media (max-width:760px) {
+            margin-bottom: 50px;
+            height: 100px;
+            width: 70px;
+        }
+}
+
+.text_container{
+    h1{
+        color: $primary;
+        font: normal normal 900 66px/97px Heebo;
+        @media (max-width:780px) {
+            text-align: center;
+            margin-bottom: 20px;
+            }
+    }
+
+    p{
+        margin-left: auto;
+        width: 60%;
+        font: normal normal normal 20px/29px Heebo;
+        @media (max-width:780px) {
+            margin: auto;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 40px;
+            }
+    }
+
+}
+
+.form{
+    width: 80%;
+    label{
+        font: normal normal bold 16px/24px Heebo;
+    }
+
+    @media (max-width:780px) {
+        margin-inline: auto;
+        width: 90%;
+        }
+    
+
+}
+.field{
+    border: none;
+    background-color: #E5EEFF;
+    border-bottom: 3px solid $primary;
+    margin-top: 5px;
+    
+}
+
+.row input{
+    height: 40px;   
+    margin-bottom: 10px;
+}
+
+.submit{
+    background-color: $primary;
+    border: none;
+    font: normal normal bold 22px/30px Heebo;
+    width: 25%;
+    @media (max-width:780px) {
+        margin-inline: auto;
+        width: 100%;
+    }
+}
+
+.social-box{
+    margin-top: 50px;
+    @media (max-width:780px) {
+        margin-top:80px;
+        margin-bottom: ;
+
+    }
+}
+
+.social{
+    @include flex-center();
+    bottom: 0px;
+    height: 80px;
+    width: 80px;
+    background-color: $primary;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.314);
+    @media (max-width:780px) {
+        height: 50px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    img {
+        @media (max-width:780px) {
+                height: 30px;
+                width: 30px;
+        }
+    }
+}
+
+.bottom-line {
+    height: 20px;
+    background-color: $primary;
+    @media (max-width:780px) {
+        height: 10px;
+        width: 100%;
+    }
+}

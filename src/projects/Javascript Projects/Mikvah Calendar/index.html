@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Purity Calendar</title>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js' defer></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="form-container">
+            <h1>Family Purity Calendar</h1>
+            <form action="" class="form">
+                <label for="machzorDate">Machzor</label>
+                <input type="date" id="machzorDate" name="machzorDate" >
+    
+                <select name="onah" id="onah">
+                    <option value="">Select Onah</option>
+                    <option value="onahAM">AM</option>
+                    <option value="onahPM">PM</option>
+                </select>
+
+                <div id="button-div">
+                    <button type="submit" id="add">Add</button>
+                    <button type="button" id="save">Save</button>
+                </div>
+                
+            </form>
+        </div>
+        
+        <div id="calendar"></div>
+    </div>
+    
+</body>
+</html>
