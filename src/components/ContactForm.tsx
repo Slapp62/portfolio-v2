@@ -77,7 +77,7 @@ export const Contact = () => {
   });
 
   return (
-    <div className="border border-white text-white rounded-2xl contact-form flex flex-col items-center gap-5 my-10 mx-auto w-[50%] py-5">
+    <div className="border border-white text-white rounded-lg contact-form flex flex-col items-center gap-5 my-20 mx-auto w-[50%] p-10">
       <h1 className="text-3xl font-bold">Contact Me</h1>
       
       {state.success && (
@@ -92,7 +92,7 @@ export const Contact = () => {
         </div>
       )}
       
-      <form action={action} className="w-[90%] flex flex-col gap-4">
+      <form action={action} className="w-full flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <label htmlFor="name">Name:</label>
           <input 

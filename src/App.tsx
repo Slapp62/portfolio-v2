@@ -12,6 +12,7 @@ function App() {
       <Header/>
       <Hero/>
       <ProjectSection/>
+
       <Contact/>
       <Footer/>
     </>

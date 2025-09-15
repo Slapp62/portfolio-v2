@@ -1,15 +1,5 @@
 import { motion } from "motion/react";
-import type { TProject } from "../Types";
-import type React from "react";
-
-type TProjectDescription = { 
-  title: string,
-  description: string,
-  tech: {
-    name: string,
-    icon: React.ComponentType
-  }[]
-}
+import type { TProject, TProjectDescription } from "../Types";
 
 export const ProjectsGrid = (props : {projectData : TProject[], projectDescription : TProjectDescription}) => {
   const { projectData, projectDescription } = props
@@ -20,7 +10,7 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{opacity: {duration: 2.5, delay: 0.2}}}
-      className="project h-[650px] w-[90%] flex align-center justify-center gap-5 mx-auto text-white">
+      className="project h-[650px] w-full flex align-center justify-center gap-5 mx-auto text-white">
       <div 
         className="flex flex-col items-center justify-center gap-5 w-[20%]">
         <h2 className="text-2xl font-bold">{projectDescription.title}</h2>

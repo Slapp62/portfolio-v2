@@ -1,9 +1,27 @@
 import { motion } from "motion/react";
+import type { TProjectDescription } from "../Types";
 
-export const MERNStackSite = () => {
+export const MERNStackSite = (props : {projectDescription : TProjectDescription}) => {
+  const { projectDescription } = props;
 
   return (
-    <div className="project h-[600px] w-full flex align-center justify-center gap-5 mx-auto">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{opacity: {duration: 2.5, delay: 0.2}}}
+      className="project text-white h-[600px] w-full flex align-center justify-center gap-5 mx-auto">
+      <div 
+        className="flex flex-col items-center justify-center gap-5 w-[20%]">
+        <h2 className="text-2xl font-bold">{projectDescription.title}</h2>
+        <p className="text-lg text-center">{projectDescription.description}</p>
+        <ul className="flex gap-3 ">{projectDescription.tech.map((tech) => 
+          <li key={tech.name}>
+            {<tech.icon size={40}/>}
+          </li>)}
+        </ul>
+      </div>
+
       <div 
         className="project-body relative gap-3 w-[60%] border border-white rounded-lg text-center  p-4 text-white">
         <motion.img 
@@ -28,7 +46,7 @@ export const MERNStackSite = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

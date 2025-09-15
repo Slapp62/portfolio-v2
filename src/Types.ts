@@ -7,4 +7,13 @@ type TProject = {
   link: string
 };
 
-export type { TProject };
+type TProjectDescription = { 
+  title: string,
+  description: string,
+  tech: {
+    name: string,
+    icon: React.ComponentType
+  }[]
+}
+
+export type { TProject, TProjectDescription };
