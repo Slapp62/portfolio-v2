@@ -1,3 +1,14 @@
+import type { Icon } from '@tabler/icons-react'
+
+type TProjectDescription = {
+  title: string,
+  description: string,
+  tech: {
+    name: string,
+    icon: Icon
+  }[]
+}
+
 type TProject = {
   id: string,
   title: string,
@@ -6,14 +17,5 @@ type TProject = {
   imageAlt: string,
   link: string
 };
-
-type TProjectDescription = { 
-  title: string,
-  description: string,
-  tech: {
-    name: string,
-    icon: React.ComponentType
-  }[]
-}
 
 export type { TProject, TProjectDescription };

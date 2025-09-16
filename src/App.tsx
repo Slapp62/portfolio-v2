@@ -1,8 +1,8 @@
 import './App.css'
-import ProjectSection from './sections/ProjectSection.tsx'
+import ProjectSection from './components/sections/ProjectSection.tsx'
 import { Hero } from './components/Hero'
-import { Header } from './navigation/Header'
-import { Footer } from './navigation/Footer'
+import { Header } from './components/navigation/Header.tsx'
+import { Footer } from './components/navigation/Footer.tsx'
 import {Contact} from './components/ContactForm.tsx'
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
       <Header/>
       <Hero/>
       <ProjectSection/>
-
       <Contact/>
       <Footer/>
     </>

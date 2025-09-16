@@ -52,7 +52,7 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
               </ul>
               <button
                 onClick={() => window.open(project.link, '_blank')}
-                className="button-hover rounded-xl px-5 py-1"
+                className="button-hover rounded-xl px-5 py-2"
               >View Project</button>
 
             </motion.div>

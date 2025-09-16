@@ -52,12 +52,18 @@ const submitAction = async (_prevState: FormState, formData: FormData): Promise<
       message: data.message,
     };
 
-    await emailjs.send(
-      'service_n1e2i8m',      // Replace with your EmailJS service ID
-      'template_cxmt4ie',     // Replace with your EmailJS template ID
-      templateParams,
-      'a6IxywqmqlHjFDfxD'       // Replace with your EmailJS public key
-    );
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (serviceId && templateId && publicKey) {
+      await emailjs.send(
+        serviceId,      
+        templateId,    
+        templateParams,
+        publicKey      
+      );
+    }
     
     return { success: true, errors: {} };
   } catch (error) {
@@ -77,7 +83,7 @@ export const Contact = () => {
   });
 
   return (
-    <div className="border border-white text-white rounded-lg contact-form flex flex-col items-center gap-5 my-20 mx-auto w-[50%] p-10">
+    <div id='contact' className="border border-white text-white rounded-lg contact-form flex flex-col items-center gap-5 my-20 mx-auto w-[50%] p-10">
       <h1 className="text-3xl font-bold">Contact Me</h1>
       
       {state.success && (
