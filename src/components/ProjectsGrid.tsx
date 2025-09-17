@@ -10,9 +10,9 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{opacity: {duration: 2.5, delay: 0.2}}}
-      className="project h-[650px] w-full flex align-center justify-center gap-5 mx-auto text-white">
+      className="project h-[650px] w-full flex md:flex-row flex-col align-center items-center justify-center gap-5 mx-auto text-white">
       <div 
-        className="flex flex-col items-center justify-center gap-5 w-[20%]">
+        className="flex flex-col items-center justify-center gap-5 md:w-[20%] w-[90%]">
         <h2 className="text-2xl font-bold">{projectDescription.title}</h2>
         <p className="text-lg text-center">{projectDescription.description}</p>
         <ul className="flex gap-3 ">{projectDescription.tech.map((tech) => 
@@ -23,7 +23,7 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
       </div>
 
       <div
-        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 w-[60%] border border-white rounded-md text-center p-3 text-white"
+        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 md:w-[60%] w-full md:border border-y border-white md:rounded-md text-center p-3 text-white"
       >
         {projectData.map((project : TProject) => (
           <div 
@@ -43,17 +43,19 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
               whileHover={{ opacity: 1 }}
               className="absolute inset-0 bg-black flex flex-col items-center justify-center p-1 gap-3">
               
-              <h4>{project.title}</h4>
-              <p className="text-sm">{project.description}</p>
-              <ul className="flex gap-3">{projectDescription.tech.map((tech) => 
+              <h4 className="md:text-lg text-sm">{project.title}</h4>
+              <p className="md:text-sm md:flex hidden text-xs">{project.description}</p>
+              <ul className="gap-2 md:flex hidden">{projectDescription.tech.map((tech) => 
                 <li key={tech.name}>
                   {<tech.icon/>}
                 </li>)}
               </ul>
               <button
                 onClick={() => window.open(project.link, '_blank')}
-                className="button-hover rounded-xl px-5 py-2"
-              >View Project</button>
+                className="button-hover rounded-xl md:px-5 px-3 md:py-2 py-1 md:text-md text-sm"
+              >
+                View Project
+              </button>
 
             </motion.div>
           </div>))}
