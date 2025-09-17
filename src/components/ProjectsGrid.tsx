@@ -23,7 +23,7 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
       </div>
 
       <div
-        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 md:w-[60%] w-full md:border border-y border-white md:rounded-md text-center p-3 text-white"
+        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 md:w-[60%] h-[650px] w-full md:border border-y border-white md:rounded-md text-center p-3 text-white"
       >
         {projectData.map((project : TProject) => (
           <div 
