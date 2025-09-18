@@ -11,19 +11,19 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
       viewport={{ once: true }}
       transition={{opacity: {duration: 2.5, delay: 0.2}}}
       className="project h-[650px] w-full flex md:flex-row flex-col align-center items-center justify-center gap-5 mx-auto text-white">
-      <div 
-        className="flex flex-col items-center justify-center gap-5 md:w-[20%] w-[90%]">
-        <h2 className="text-2xl font-bold">{projectDescription.title}</h2>
-        <p className="text-lg text-center">{projectDescription.description}</p>
-        <ul className="flex gap-3 ">{projectDescription.tech.map((tech) => 
-          <li key={tech.name}>
-            {<tech.icon size={40}/>}
-          </li>)}
-        </ul>
-      </div>
+        <div 
+          className="flex flex-col items-center mx-auto justify-center gap-5 md:w-[20%] w-[90%]">
+          <h2 className="text-2xl font-bold">{projectDescription.title}</h2>
+          <p className="text-lg text-center">{projectDescription.description}</p>
+          <ul className="flex gap-3 ">{projectDescription.tech.map((tech) => 
+            <li key={tech.name}>
+              {<tech.icon size={40}/>}
+            </li>)}
+          </ul>
+        </div>
 
       <div
-        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 md:w-[60%] h-[650px] w-full md:border border-y border-white md:rounded-md text-center p-3 text-white"
+        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 h-full md:w-[70%] w-full mx-auto md:border border-y border-white md:rounded-md text-center p-3 text-white"
       >
         {projectData.map((project : TProject) => (
           <div 
