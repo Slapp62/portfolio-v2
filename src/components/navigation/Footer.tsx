@@ -3,7 +3,7 @@ import { IconMail, IconBrandWhatsapp, IconBrandLinkedin } from "@tabler/icons-re
 export const Footer = () => {
   return (
     <footer className="footer mt-10 text-white  flex justify-center items-center gap-6 p-5 border-t border-gray-400">
-      <p className="text-xl">
+      <p className="md:text-xl text-md">
         Created by Simcha Lapp
       </p>
       <div className="flex gap-5 items-center justify-center text-gray-400 border border-gray-400 rounded-lg py-2 px-3">
