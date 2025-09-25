@@ -7,7 +7,7 @@ import { mernSiteDescription } from "../../data/mernSiteData";
 
 const ProjectSection = () => {
   return (
-    <div id="projects" className="project-section flex flex-col w-[90%] gap-10 mx-auto border-y border-zinc-600 py-5">
+    <div id="projects" className="project-section flex flex-col w-full gap-10 mx-auto px-10 border-y border-zinc-600 py-5">
       
       <h1 className="text-4xl font-bold text-center text-white">Full Stack Projects</h1>
       <MERNStackSite projectDescription={mernSiteDescription}/>
