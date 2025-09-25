@@ -7,15 +7,14 @@ import { mernSiteDescription } from "../../data/mernSiteData";
 
 const ProjectSection = () => {
   return (
-    <div id="projects" className="project-section flex flex-col w-full gap-10 mx-auto px-10 border-y border-zinc-600 py-5">
+    <div id="projects" className="project-section flex flex-col w-full gap-10 px-10 py-5 ml-auto">
       
       <h1 className="text-4xl font-bold text-center text-white">Full Stack Projects</h1>
       <MERNStackSite projectDescription={mernSiteDescription}/>
       
-      <h1 className="text-4xl font-bold text-center text-white">Javascript Projects</h1>
+      <h2 className="text-3xl font-bold text-center text-white">Assorted Early Projects</h2>
       <ProjectsGrid projectData={jsProjects} projectDescription={javascriptDescription} /> 
-       
-      <h1 className="text-4xl font-bold text-center text-white">HTML & CSS Landing Pages</h1>
+  
       <ProjectsGrid projectData={htmlProjects} projectDescription={htmlDescription} />
     </div>
   );

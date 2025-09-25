@@ -1,22 +1,25 @@
 import './App.css'
 import ProjectSection from './components/sections/ProjectSection.tsx'
 import { Hero } from './components/Hero'
-import { Header } from './components/navigation/Header.tsx'
 import { Footer } from './components/navigation/Footer.tsx'
 import {Contact} from './components/ContactForm.tsx'
+import LeftSide from './components/LeftSide.tsx'
+import RightSide from './components/RightSide.tsx'
 
 function App() {
 
   return (
-    <>
-      <div className="bg-image">
-        <Header/>
+    <div className='w-full h-full'>
+      <LeftSide>
         <Hero/>
-      </div>
-      <ProjectSection/>
-      <Contact/>
-      <Footer/>
-    </>
+      </LeftSide>
+
+      <RightSide>
+        <ProjectSection/>
+        <Contact/>
+        <Footer/>
+      </RightSide>
+    </div>
   )
 }
 

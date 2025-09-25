@@ -10,9 +10,9 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{opacity: {duration: 2.5, delay: 0.2}}}
-      className="project h-[650px] w-full flex md:flex-row flex-col align-center items-center justify-center gap-5 mx-auto text-white">
+      className="project h-[650px] w-full flex flex-col align-center items-center justify-center gap-5 mx-auto text-white">
         <div 
-          className="flex flex-col items-center mx-auto justify-center gap-5 md:w-[20%] w-[90%]">
+          className="flex flex-col items-center mx-auto justify-center gap-5 w-full">
           <h2 className="text-2xl font-bold">{projectDescription.title}</h2>
           <p className="text-lg text-center">{projectDescription.description}</p>
           <ul className="flex gap-3 ">{projectDescription.tech.map((tech) => 
@@ -23,7 +23,7 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
         </div>
 
       <div
-        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 h-full md:w-[70%] w-full mx-auto md:border border-y border-white md:rounded-md text-center p-3 text-white"
+        className="project-body overflow-hidden grid grid-cols-3 grid-rows-3 gap-3 h-full w-full mx-auto md:border border-y border-white md:rounded-md text-center p-3 text-white"
       >
         {projectData.map((project : TProject) => (
           <div 
@@ -52,7 +52,7 @@ export const ProjectsGrid = (props : {projectData : TProject[], projectDescripti
               </ul>
               <button
                 onClick={() => window.open(project.link, '_blank')}
-                className="button-hover rounded-xl md:px-5 px-3 md:py-2 py-1 md:text-md text-sm"
+                className="button-outline rounded-xl md:px-5 px-3 md:py-2 py-1 md:text-md text-sm"
               >
                 View Project
               </button>

@@ -10,9 +10,9 @@ export const MERNStackSite = (props : {projectDescription : TProjectDescription}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{opacity: {duration: 2.5, delay: 0.2}}}
-      className="project h-[650px] w-full flex md:flex-row flex-col align-center items-center justify-center gap-5 mx-auto text-white">
+      className="project h-[650px] w-full flex flex-col align-center items-center justify-center gap-5 mx-auto text-white">
       <div 
-        className="flex flex-col items-center text-center justify-center mx-auto md:w-[20%] w-[90%] gap-5">
+        className="flex flex-col items-center text-center justify-center mx-auto w-full gap-5">
         <h2 className="md:text-2xl font-bold">{projectDescription.title}</h2>
         <p className="md:text-lg text-center">{projectDescription.description}</p>
         <ul className="flex gap-3 ">{projectDescription.tech.map((tech) => 
@@ -23,7 +23,7 @@ export const MERNStackSite = (props : {projectDescription : TProjectDescription}
       </div>
 
       <div 
-        className="project-body relative gap-3 md:w-[70%] w-full h-full mx-auto md:border border-y border-white md:rounded-lg text-center p-3 text-white">
+        className="project-body relative gap-3 w-full h-full mx-auto md:border border-y border-white md:rounded-lg text-center p-3 text-white">
         <motion.img 
           src='./mernStackSite.png' alt='homepage' 
           className='w-full h-full object-cover object-center rounded-lg'
