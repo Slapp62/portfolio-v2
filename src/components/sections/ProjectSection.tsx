@@ -5,7 +5,7 @@ import MERNStackSite from "../mernStackSite";
 import { mernSiteDescription } from "../../data/mernSiteData";
 
 
-const CardSection = () => {
+const ProjectSection = () => {
   return (
     <div id="projects" className="project-section flex flex-col w-[90%] gap-10 mx-auto border-y border-zinc-600 py-5">
       
@@ -21,4 +21,4 @@ const CardSection = () => {
   );
 };
 
-export default CardSection;
+export default ProjectSection;

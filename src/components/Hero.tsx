@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export const Hero = () => {
   return (
     <div 
-      className="hero overflow-hidden flex md:flex-row flex-col justify-center md:h-[600px] h-fit w-full items-center gap-10 my-10">
+      className="hero overflow-hidden flex md:flex-row flex-col justify-center md:h-[600px] h-fit w-full items-center gap-10">
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -12,7 +12,7 @@ export const Hero = () => {
         transition={{    
           opacity: { duration: 2.5} 
         }} 
-        className="hero-content flex md:flex-row flex-col items-center justify-center md:h-[80%] md:w-3/4 w-[100%] md:mt-0 p-5 md:border border-y md:border-white -amber-100 md:rounded-lg text-white text-center md:gap-20 gap-10"
+        className="hero-content flex md:flex-row-reverse flex-col items-center justify-center md:h-[90%] md:w-3/4 w-[100%] p-5 md:border border-y md:border-white -amber-100 md:rounded-lg text-white text-center md:gap-20 gap-10"
       >
         <div className="flex flex-col justify-center md:w-2/4 w-full text-center"> 
           <h1 className="md:text-5xl text-3xl font-bold">Simcha Lapp</h1>
