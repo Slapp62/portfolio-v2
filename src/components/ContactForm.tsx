@@ -83,7 +83,8 @@ export const Contact = () => {
   });
 
   return (
-    <div id='contact' className="text-white md:rounded-lg contact-form flex flex-col gap-5 mx-auto w-[90%] lg:p-10 p-5">
+    <div id='contact' className="text-white rounded-lg contact-form flex flex-col align-center justify-center
+    gap-5 mx-auto w-full lg:p-10 p-5">
 
       <h1 className="text-3xl font-bold">Contact Me</h1>
       
