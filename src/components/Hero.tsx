@@ -5,7 +5,12 @@ import Social from "./Social";
 export const Hero = () => {
   return (
     <div 
-      className="hero overflow-hidden flex md:flex-row flex-col justify-center md:h-full h-fit w-full items-center gap-10">
+      className="
+        lg:sticky top-15 lg:mt-0 mt-10
+        hero overflow-hidden 
+        flex lg:flex-row flex-col justify-center 
+        h-fit lg:w-[40%] w-[90%] lg:mx-0 mx-auto
+        items-center gap-10">
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -13,7 +18,7 @@ export const Hero = () => {
         transition={{    
           opacity: { duration: 2.5} 
         }} 
-        className="bg-image hero-content flex flex-col items-center justify-evenly md:h-[90%] md:w-[90%] w-[100%] p-5  text-white md:gap-20 gap-10 rounded-lg"
+        className="bg-image hero-content flex flex-col items-center justify-evenly md:h-[90%] lg:p-5 p-10  text-white md:gap-20 gap-10 rounded-lg"
       >
         <div className="flex flex-col md:w-[90%] w-full gap-4"> 
           <h1 className="md:text-5xl text-md font-bold ">Simcha Lapp</h1>
