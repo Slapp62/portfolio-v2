@@ -2,7 +2,7 @@ import { IconMail, IconBrandWhatsapp, IconBrandLinkedin } from "@tabler/icons-re
 
 const Social = () => {
   return (
-    <div className="flex gap-5 items-center justify-center py-2 px-3 w-fit mx-auto">
+    <div className="flex gap-5 items-center justify-center py-2 px-3 h-fit w-fit mx-auto">
       <a 
         className="link-hover" 
         href="mailto:slapp62@gmail.com">

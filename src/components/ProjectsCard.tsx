@@ -21,20 +21,22 @@ export const ProjectCard = (props : {projectData : TProject[], projectDescriptio
         className="project-body flex flex-col gap-5 h-full w-full mx-auto text-center text-white"
       >
         {projectData.map((project : TProject) => (
-          <div 
-            key={project.id} 
-            className="project-card flex flex-row items-center justify-center border-slate-500 border-1 rounded-2xl gap-3 py-3 px-5"
+          <motion.div 
+            key={project.id}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{opacity: {duration: 1.5, delay: 0.1}}} 
+            className="project-card lg:h-fit flex lg:flex-row flex-col items-center justify-between border-slate-500 border-1 rounded-2xl gap-3 p-2"
           >
-            <motion.img 
-              loading="lazy" 
-              src={project.image} 
-              alt={project.imageAlt} 
-              className='w-[100px] h-[100px] object-cover object-center rounded-2xl'
-            />
             
-            <motion.div className="flex flex-row items-center max-w-full justify-center">  
-              <div className="flex flex-col items-center max-w-full justify-center p-1 gap-3">
-              
+              <img 
+                loading="lazy" 
+                src={project.image} 
+                alt={project.imageAlt} 
+                className='lg:w-1/4 lg:h-full w-full h-[200px]  object-cover object-center rounded-2xl'
+              />
+              <div className="flex flex-col text-center max-w-full items-center p-1 gap-3">
                 <h4 className="md:text-lg text-sm">{project.title}</h4>
                 <p className="md:text-sm text-xs md:flex max-w-[90%]">{project.description}</p>
                 <ul className="gap-2 flex">{projectDescription.tech.map((tech) => 
@@ -50,9 +52,8 @@ export const ProjectCard = (props : {projectData : TProject[], projectDescriptio
               >
                 View Project
               </button>
-            </motion.div>
             
-          </div>))}
+          </motion.div>))}
       </div>
     </motion.div>
   );

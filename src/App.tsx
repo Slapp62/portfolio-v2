@@ -7,9 +7,9 @@ import {Contact} from './components/ContactForm.tsx'
 function App() {
 
   return (
-    <div className="flex lg:flex-row flex-col gap-10 justify-center lg:max-w-full lg:mt-15 ">
+    <div className="flex lg:flex-row flex-col gap-10 justify-center lg:max-w-full  ">
       <Hero/>
-      <div className="lg:w-[40%] max-w-[90%] lg:mx-0 mx-auto flex flex-col gap-10 lg:ml-10">
+      <div className="lg:mt-15 lg:w-[40%] max-w-[90%] lg:mx-0 mx-auto flex flex-col gap-10 lg:ml-10">
         <ProjectSection/>
         <Contact/>
         <Footer/>

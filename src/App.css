@@ -28,14 +28,14 @@
 }
 
 .link-hover{
-  transition: 0.2s;
+  transition: 0.3s;
   transition-timing-function: ease-in-out;
   border-radius: 10px;
 }
 
 .link-hover:hover{
     color: rgb(255, 255, 255);
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .bg-image{
