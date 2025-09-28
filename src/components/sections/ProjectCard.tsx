@@ -24,9 +24,10 @@ export const ProjectCard = (props: {
         <p className="text-center text-lg">{projectDescription.description}</p>
         <ul className="flex flex-row gap-3">
           {projectDescription.tech.map((tech, index) => (
-          <li key={index}>
-            <tech.icon/>
-          </li>))}
+            <li key={index}>
+              <tech.icon />
+            </li>
+          ))}
         </ul>
       </div>
 
@@ -38,42 +39,45 @@ export const ProjectCard = (props: {
           whileHover={{ backgroundColor: 'rgba(150, 150, 150, 0.1)' }}
           viewport={{ once: true }}
           transition={{ opacity: { duration: 1.5, delay: 0.1 } }}
-          className="project-card flex h-full w-full flex-col text-center text-white items-center  gap-3 rounded-2xl border-1 border-slate-500 p-2 lg:h-fit lg:flex-row"
+          className="project-card flex h-full w-full flex-col items-center gap-3 rounded-2xl border-1 border-slate-500 p-2 text-center text-white lg:h-fit lg:flex-row"
         >
           <img
             loading="lazy"
             src={project.image}
             alt={project.imageAlt}
-            className="h-[150px] w-full rounded-lg lg:mr-auto object-cover object-center lg:h-full lg:w-[200px]"
+            className="h-[150px] w-full rounded-lg object-cover object-center lg:mr-auto lg:h-full lg:w-[200px]"
           />
 
-          <div className="flex max-w-full lg:mr-auto flex-col items-center gap-2 p-1 text-center">
-            <h4 className="text-sm md:text-lg font-semibold">{project.title}</h4>
+          <div className="flex max-w-full flex-col items-center gap-2 p-1 text-center lg:mr-auto">
+            <h4 className="text-sm font-semibold md:text-lg">
+              {project.title}
+            </h4>
             <p className="max-w-[90%] text-xs md:flex md:text-sm">
-              {project.description} 
+              {project.description}
             </p>
-            
-            <div className="flex gap-2 py-2 flex-wrap justify-center">
+
+            <div className="flex flex-wrap justify-center gap-2 py-2">
               {project.tech.map(tech => (
                 <Badge key={tech}>{tech}</Badge>
               ))}
             </div>
 
             <a
-            onClick={() => window.open(project.link, '_blank')}
-            className="flex gap-2 items-center cursor-pointer font-bold text-emerald-200 hover:text-emerald-500 duration-300 lg:text-md rounded-xl text-sm">
-              View Project {<IconExternalLink/>}
+              onClick={() => window.open(project.link, '_blank')}
+              className="lg:text-md flex cursor-pointer items-center gap-2 rounded-xl text-sm font-bold text-emerald-200 duration-300 hover:text-emerald-500"
+            >
+              View Project {<IconExternalLink />}
             </a>
 
-            {project.github && 
-            <a
-            onClick={() => window.open(project.github, '_blank')}
-            className="flex gap-2 items-center cursor-pointer font-bold text-emerald-200 hover:text-emerald-500 duration-300 lg:text-md rounded-xl text-sm">
-              GitHub {<IconExternalLink/>}
-            </a>}
+            {project.github && (
+              <a
+                onClick={() => window.open(project.github, '_blank')}
+                className="lg:text-md flex cursor-pointer items-center gap-2 rounded-xl text-sm font-bold text-emerald-200 duration-300 hover:text-emerald-500"
+              >
+                GitHub {<IconExternalLink />}
+              </a>
+            )}
           </div>
-
-          
         </motion.div>
       ))}
     </motion.div>

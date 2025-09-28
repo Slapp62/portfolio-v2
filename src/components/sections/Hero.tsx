@@ -22,16 +22,16 @@ export const Hero = () => {
         transition={{
           opacity: { duration: 2.5 },
         }}
-        className="flex flex-col gap-10 text-white justify-evenly lg:h-[80%] lg:gap-5"
+        className="flex flex-col justify-evenly gap-10 text-white lg:h-[80%] lg:gap-5"
       >
-        <div className="flex w-full p-5 h-full flex-col gap-4 lg:p-0">
-          <h1 className="text-3xl font-bold lg:text-5xl lg:text-start text-center">
+        <div className="flex h-full w-full flex-col gap-4 p-5 lg:p-0">
+          <h1 className="text-center text-3xl font-bold lg:text-start lg:text-5xl">
             Simcha Lapp
           </h1>
-          <h2 className="text-lg font-semibold text-indigo-300 lg:text-xl lg:text-start text-center">
+          <h2 className="text-center text-lg font-semibold text-indigo-300 lg:text-start lg:text-xl">
             Full Stack Web Developer
           </h2>
-          <ul className="flex flex-col gap-3 w-[90%] text-xs leading-7 lg:text-sm text-zinc-200">
+          <ul className="flex w-[90%] flex-col gap-3 text-xs leading-7 text-zinc-200 lg:text-sm">
             <li>
               I am a junior full stack web developer who enjoys solving problems
               and pushing my limits. I focus on building useful applications
@@ -41,25 +41,25 @@ export const Hero = () => {
               I recently completed a Full Stack Web Development course at
               HackerU and am progressively broadening my horizons with bigger
               challenges. I began with landing pages in HTML and CSS, moved on
-              to simple Javascript apps, and now completed a functional MERN stack website.
+              to simple Javascript apps, and now completed a functional MERN
+              stack website.
             </li>
             <li>
-              My next project will be a website
-              that can be launched to the public and provide real value to
-              users.
+              My next project will be a website that can be launched to the
+              public and provide real value to users.
             </li>
             <li>
               My current skills include: HTML, CSS, Javascript, Typescript,
-              React, Redux, MantineUI, shadcn/ui, TailwindCSS, Node.js, Express, MongoDB, and
-              Mongoose.
+              React, Redux, MantineUI, shadcn/ui, TailwindCSS, Node.js, Express,
+              MongoDB, and Mongoose.
             </li>
           </ul>
         </div>
-        
+
         <div className="flex flex-col gap-5">
           <Button
             asChild
-            className="px-20 py-5 text-lg button-outline w-fit lg:mx-0 mx-auto"
+            className="button-outline mx-auto w-fit px-20 py-5 text-lg lg:mx-0"
           >
             <a href="./Simcha Lapp Resume (Updated 09.25).pdf" target="_blank">
               View Resume

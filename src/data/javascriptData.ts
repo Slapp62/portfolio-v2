@@ -15,7 +15,7 @@ export const jsProjects = [
     image: './javascript-images/math_game.jpg',
     imageAlt: 'equations',
     link: 'projects/Javascript Projects/Math Game/index.html',
-    tech: ['HTML', 'CSS', 'JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'pagebuilder',
@@ -25,7 +25,7 @@ export const jsProjects = [
     image: './javascript-images/webpage.jpg',
     imageAlt: 'webpage',
     link: 'projects/Javascript Projects/Page Builder/index.html',
-    tech: ['HTML', 'CSS', 'JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'countrydata',
@@ -34,7 +34,7 @@ export const jsProjects = [
     image: './javascript-images/globe.jpg',
     imageAlt: 'globe',
     link: 'projects/Javascript Projects/Country Data/index.html',
-    tech: ['HTML', 'CSS', 'JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'worldclocks',
@@ -73,7 +73,7 @@ export const jsProjects = [
     image: './javascript-images/cards.jpg',
     imageAlt: 'cards',
     link: '/projects/Javascript Projects/Memory Game/index.html',
-    tech: ['HTML', 'CSS', 'JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   // {
   //   id: 'calendar',
@@ -91,7 +91,7 @@ export const jsProjects = [
     image: './javascript-images/calculator.jpg',
     imageAlt: 'calendar',
     link: '/projects/Javascript Projects/Calculator/dist/index.html',
-    tech: ['HTML', 'CSS', 'TypeScript']
+    tech: ['HTML', 'CSS', 'TypeScript'],
   },
 ];
 

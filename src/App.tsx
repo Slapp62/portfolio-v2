@@ -7,12 +7,17 @@ import { Button } from './components/ui/button.tsx';
 
 function App() {
   return (
-    <div id='app' className="flex flex-col gap-10 justify-center lg:max-w-full lg:flex-row">
+    <div
+      id="app"
+      className="flex flex-col justify-center gap-10 lg:max-w-full lg:flex-row"
+    >
       <Hero />
       <div className="mx-auto flex max-w-[90%] flex-col gap-10 lg:mx-0 lg:mt-15 lg:ml-10 lg:w-[40%]">
         <ProjectSection />
         <Contact />
-        <Button className='w-fit px-10 mx-auto'><a href="#app">Back to Top</a></Button>
+        <Button className="mx-auto w-fit px-10">
+          <a href="#app">Back to Top</a>
+        </Button>
         <Footer />
       </div>
     </div>

@@ -12,13 +12,12 @@ export const htmlProjects = [
   {
     id: 'consulting',
     title: 'Consulting Firm Contact Page',
-    description:
-      'A funky contact page for a consulting firm.',
+    description: 'A funky contact page for a consulting firm.',
     image: './htmlcss-images/handshake.jpg',
     imageAlt: 'handshake',
     link: '/projects/HTML_CSS Projects/Consulting_Project/index.html',
-    tech: ['HTML', 'CSS', 'SASS', 'Bootstrap']
-  }, 
+    tech: ['HTML', 'CSS', 'SASS', 'Bootstrap'],
+  },
   {
     id: 'coding',
     title: 'Coding Course Sign Up',
@@ -27,7 +26,7 @@ export const htmlProjects = [
     image: './htmlcss-images/coding_background.jpg',
     imageAlt: 'programming code',
     link: '/projects/HTML_CSS Projects/Coding_Project/index.html',
-    tech: ['HTML', 'CSS', 'SASS']
+    tech: ['HTML', 'CSS', 'SASS'],
   },
   {
     id: 'giftcard',
@@ -36,7 +35,7 @@ export const htmlProjects = [
     image: './htmlcss-images/mall.jpg',
     imageAlt: 'shopping mall',
     link: '/projects/HTML_CSS Projects/Giftcard_Project/index.html',
-    tech: ['HTML', 'CSS', 'SASS']
+    tech: ['HTML', 'CSS', 'SASS'],
   },
   {
     id: 'delivery',
@@ -45,7 +44,7 @@ export const htmlProjects = [
     image: './htmlcss-images/package.jpg',
     imageAlt: 'delivery truck',
     link: '/projects/HTML_CSS Projects/Delivery_Project/index.html',
-    tech: ['HTML', 'CSS', 'Bootstrap']
+    tech: ['HTML', 'CSS', 'Bootstrap'],
   },
   {
     id: 'crypto',
@@ -55,7 +54,7 @@ export const htmlProjects = [
     image: './htmlcss-images/btc.jpg',
     imageAlt: 'bitcoin logo',
     link: '/projects/HTML_CSS Projects/Crypto_Project/index.html',
-    tech: ['HTML', 'CSS', 'Bootstrap']
+    tech: ['HTML', 'CSS', 'Bootstrap'],
   },
   // {
   //   id: 'coffee',
@@ -93,6 +92,6 @@ export const htmlProjects = [
   //   image: './htmlcss-images/tiger.jpg',
   //   imageAlt: 'tiger',
   //   link: '/projects/HTML_CSS Projects/Zoo_Project/index.html',
-  //   tech: ['HTML', 'CSS']  
+  //   tech: ['HTML', 'CSS']
   // },
 ];
