@@ -59,7 +59,7 @@ export const Hero = () => {
         <div className="flex flex-col gap-5">
           <Button
             asChild
-            className="px-20 py-5 text-lg button-outline w-fit"
+            className="px-20 py-5 text-lg button-outline w-fit lg:mx-0 mx-auto"
           >
             <a href="./Simcha Lapp Resume (Updated 09.25).pdf" target="_blank">
               View Resume
