@@ -30,7 +30,12 @@ export const Hero = () => {
             <li>My current skills include: HTML, CSS, Javascript, Typescript, React, MantineUI, Tailwind, Node.js, Express, MongoDB, and Mongoose</li>
           </ul>
         </div>
-
+        <div>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
         <Button asChild
           className="button-outline px-20 py-5 w-fit mx-auto text-lg">
             <a href="./Simcha Lapp Resume 2025 (Updated).pdf" target="_blank" >View Resume</a>
