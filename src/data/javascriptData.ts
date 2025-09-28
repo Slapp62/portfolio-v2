@@ -15,6 +15,7 @@ export const jsProjects = [
     image: './javascript-images/math_game.jpg',
     imageAlt: 'equations',
     link: 'projects/Javascript Projects/Math Game/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     id: 'pagebuilder',
@@ -24,6 +25,7 @@ export const jsProjects = [
     image: './javascript-images/webpage.jpg',
     imageAlt: 'webpage',
     link: 'projects/Javascript Projects/Page Builder/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     id: 'countrydata',
@@ -32,6 +34,7 @@ export const jsProjects = [
     image: './javascript-images/globe.jpg',
     imageAlt: 'globe',
     link: 'projects/Javascript Projects/Country Data/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     id: 'worldclocks',
@@ -41,6 +44,7 @@ export const jsProjects = [
     image: './javascript-images/clocks.jpg',
     imageAlt: 'clocks',
     link: 'projects/Javascript Projects/World Clock/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'tictactoe',
@@ -49,6 +53,7 @@ export const jsProjects = [
     image: './javascript-images/tictactoe.jpg',
     imageAlt: 'TicTacToe',
     link: 'projects/Javascript Projects/TicTacToe/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'userlogin',
@@ -58,6 +63,7 @@ export const jsProjects = [
     image: './javascript-images/account.jpg',
     imageAlt: 'computer',
     link: 'projects/Javascript Projects/User Login/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'memory',
@@ -67,6 +73,7 @@ export const jsProjects = [
     image: './javascript-images/cards.jpg',
     imageAlt: 'cards',
     link: '/projects/Javascript Projects/Memory Game/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     id: 'calendar',
@@ -75,14 +82,16 @@ export const jsProjects = [
     image: './javascript-images/calendar.jpg',
     imageAlt: 'calendar',
     link: '/projects/Javascript Projects/Mikvah Calendar/index.html',
+    tech: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 'calculator',
     title: 'Calculator',
-    description: 'Under Development. TypeScript.',
+    description: 'A simple calculator.',
     image: './javascript-images/calculator.jpg',
     imageAlt: 'calendar',
     link: '/projects/Javascript Projects/Calculator/dist/index.html',
+    tech: ['HTML', 'CSS', 'TypeScript']
   },
 ];
 

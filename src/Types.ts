@@ -16,6 +16,7 @@ type TProject = {
   image: string;
   imageAlt: string;
   link: string;
+  tech: string[];
 };
 
 export type { TProject, TProjectDescription };

@@ -6,12 +6,12 @@ export const Hero = () => {
   return (
     <div className="hero top-0 mx-auto mt-5 flex w-[95%] flex-col items-center justify-center gap-5 overflow-hidden lg:sticky lg:mx-0 lg:mt-0 lg:h-screen lg:w-[40%]">
       <nav className="w-full lg:w-[90%] ">
-        <ul className="flex flex-row justify-center gap-5 font-bold text-emerald-100 text-xl">
+        <ul className="flex flex-row justify-center gap-5 font-bold text-emerald-100  text-xl">
           <li>
-            <a href="#projects">Projects</a>
+            <a href="#projects" className='hover:text-emerald-500 duration-300'>Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className='hover:text-emerald-500 duration-300'>Contact</a>
           </li>
         </ul>
       </nav>
@@ -22,7 +22,7 @@ export const Hero = () => {
         transition={{
           opacity: { duration: 2.5 },
         }}
-        className="flex flex-col items-center gap-10 rounded-lg border-1 border-slate-500 p-5 text-white justify-evenly lg:h-[80%] lg:gap-0"
+        className="flex flex-col items-center gap-10 rounded-lg border-1 border-slate-500 p-5 text-white justify-evenly lg:h-[80%] lg:gap-5"
       >
         <div className="flex w-full flex-col gap-4 lg:w-[90%]">
           <h1 className="text-3xl font-bold text-center lg:text-5xl">
@@ -56,6 +56,7 @@ export const Hero = () => {
           </ul>
         </div>
         
+        <div className="flex flex-col gap-5">
         <Button
           asChild
           className="px-20 py-5 mx-auto text-lg button-outline w-fit"
@@ -66,6 +67,7 @@ export const Hero = () => {
         </Button>
 
         <Social />
+        </div>
       </motion.div>
     </div>
   );

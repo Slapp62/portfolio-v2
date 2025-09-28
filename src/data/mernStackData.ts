@@ -15,6 +15,7 @@ export const fullStackProjects = [
     image: './mernStackSite.png',
     imageAlt: 'equations',
     link: 'https://mernstackproject-client.onrender.com/',
+    tech: ['HTML', 'CSS', 'JavaScript', 'MantineUI', 'Joi', 'Node.js', 'Express', 'React', 'MongoDB'],
   },
 ];
 

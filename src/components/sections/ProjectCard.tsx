@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import type { TProject, TProjectDescription } from '@/Types';
+import { Badge } from '../ui/badge';
 
 export const ProjectCard = (props: {
   projectData: TProject[];
@@ -20,45 +21,53 @@ export const ProjectCard = (props: {
           {projectDescription.title}
         </h2>
         <p className="text-center text-lg">{projectDescription.description}</p>
+        <ul className="flex flex-row gap-3">
+          {projectDescription.tech.map((tech, index) => (
+          <li key={index}>
+            <tech.icon/>
+          </li>))}
+        </ul>
       </div>
 
-      <div className="project-body mx-auto flex h-full w-full flex-col gap-5 text-center text-white">
-        {projectData.map((project: TProject) => (
-          <motion.div
-            key={project.id}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ opacity: { duration: 1.5, delay: 0.1 } }}
-            className="project-card flex flex-col items-center justify-between gap-3 rounded-2xl border-1 border-slate-500 p-2 lg:h-fit lg:flex-row"
-          >
-            <img
-              loading="lazy"
-              src={project.image}
-              alt={project.imageAlt}
-              className="h-[200px] w-full rounded-2xl object-cover object-center lg:h-full lg:w-1/4"
-            />
-            <div className="flex max-w-full flex-col items-center gap-3 p-1 text-center">
-              <h4 className="text-sm md:text-lg">{project.title}</h4>
-              <p className="max-w-[90%] text-xs md:flex md:text-sm">
-                {project.description}
-              </p>
-              <ul className="flex gap-2">
-                {projectDescription.tech.map(tech => (
-                  <li key={tech.name}>{<tech.icon />}</li>
-                ))}
-              </ul>
+      {projectData.map((project: TProject) => (
+        <motion.div
+          key={project.id}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          whileHover={{ backgroundColor: 'rgba(150, 150, 150, 0.1)' }}
+          viewport={{ once: true }}
+          transition={{ opacity: { duration: 1.5, delay: 0.1 } }}
+          className="project-card flex h-full w-full flex-col text-center text-white items-center  gap-3 rounded-2xl border-1 border-slate-500 p-2 lg:h-fit lg:flex-row"
+        >
+          <img
+            loading="lazy"
+            src={project.image}
+            alt={project.imageAlt}
+            className="h-[200px] w-full rounded-lg lg:mr-auto object-cover object-center lg:h-full lg:w-[200px]"
+          />
+
+          <div className="flex max-w-full lg:mr-auto flex-col items-center gap-2 p-1 text-center">
+            <h4 className="text-sm md:text-lg">{project.title}</h4>
+            <p className="max-w-[90%] text-xs md:flex md:text-sm">
+              {project.description} 
+            </p>
+            
+            <div className="flex gap-2 py-2 flex-wrap justify-center">
+              {project.tech.map(tech => (
+                <Badge key={tech}>{tech}</Badge>
+              ))}
             </div>
 
-            <button
-              onClick={() => window.open(project.link, '_blank')}
-              className="button-outline lg:text-md rounded-xl px-5 py-2 text-sm"
-            >
-              View Project
-            </button>
-          </motion.div>
-        ))}
-      </div>
+            <a
+            onClick={() => window.open(project.link, '_blank')}
+            className="cursor-pointer font-bold text-emerald-200 hover:text-emerald-500 duration-300 lg:text-md rounded-xl text-sm">
+            View Project
+            </a>
+          </div>
+
+          
+        </motion.div>
+      ))}
     </motion.div>
   );
 };
