@@ -5,7 +5,7 @@ import Social from './Social';
 export const Hero = () => {
   return (
     <div className="hero top-0 mx-auto mt-5 flex w-[95%] flex-col items-center justify-center gap-5 overflow-hidden lg:sticky lg:mx-0 lg:mt-0 lg:h-screen lg:w-[40%]">
-      <nav className="w-full lg:w-[90%] ">
+      {/* <nav className="w-full lg:w-[90%]">
         <ul className="flex flex-row justify-center gap-5 font-bold text-emerald-100  text-xl">
           <li>
             <a href="#projects" className='hover:text-emerald-500 duration-300'>Projects</a>
@@ -14,7 +14,7 @@ export const Hero = () => {
             <a href="#contact" className='hover:text-emerald-500 duration-300'>Contact</a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -22,51 +22,51 @@ export const Hero = () => {
         transition={{
           opacity: { duration: 2.5 },
         }}
-        className="flex flex-col items-center gap-10 rounded-lg border-1 border-slate-500 p-5 text-white justify-evenly lg:h-[80%] lg:gap-5"
+        className="flex flex-col gap-10 text-white justify-evenly lg:h-[80%] lg:gap-5"
       >
-        <div className="flex w-full flex-col gap-4 lg:w-[90%]">
-          <h1 className="text-3xl font-bold text-center lg:text-5xl">
+        <div className="flex w-full p-5 h-full flex-col gap-4 lg:p-0">
+          <h1 className="text-3xl font-bold lg:text-5xl lg:text-start text-center">
             Simcha Lapp
           </h1>
-          <h2 className="text-lg font-semibold text-center text-indigo-300 lg:text-xl">
+          <h2 className="text-lg font-semibold text-indigo-300 lg:text-xl lg:text-start text-center">
             Full Stack Web Developer
           </h2>
-          <ul className="w-full text-xs leading-7 lg:text-sm">
-            <li className="">
+          <ul className="flex flex-col gap-3 w-[90%] text-xs leading-7 lg:text-sm text-zinc-200">
+            <li>
               I am a junior full stack web developer who enjoys solving problems
-              and and pushing my limits. I focus on building useful applications
-              with inutitve and beautiful frontends and scalable backends.
+              and pushing my limits. I focus on building useful applications
+              with inutitve, beautiful frontends and scalable backends.
             </li>
             <li>
-              I have recently completed a Full Stack Web Development course at
+              I recently completed a Full Stack Web Development course at
               HackerU and am progressively broadening my horizons with bigger
               challenges. I began with landing pages in HTML and CSS, moved on
-              to simple Javascript apps, and now completed a MERN stack website.
+              to simple Javascript apps, and now completed a functional MERN stack website.
             </li>
             <li>
-              My next project is going to be a functional full stack website
+              My next project will be a website
               that can be launched to the public and provide real value to
               users.
             </li>
             <li>
               My current skills include: HTML, CSS, Javascript, Typescript,
-              React, MantineUI, Tailwind, Node.js, Express, MongoDB, and
-              Mongoose
+              React, Redux, MantineUI, shadcn/ui, TailwindCSS, Node.js, Express, MongoDB, and
+              Mongoose.
             </li>
           </ul>
         </div>
         
         <div className="flex flex-col gap-5">
-        <Button
-          asChild
-          className="px-20 py-5 mx-auto text-lg button-outline w-fit"
-        >
-          <a href="./Simcha Lapp Resume (Updated 09.25).pdf" target="_blank">
-            View Resume
-          </a>
-        </Button>
+          <Button
+            asChild
+            className="px-20 py-5 text-lg button-outline w-fit"
+          >
+            <a href="./Simcha Lapp Resume (Updated 09.25).pdf" target="_blank">
+              View Resume
+            </a>
+          </Button>
 
-        <Social />
+          <Social />
         </div>
       </motion.div>
     </div>

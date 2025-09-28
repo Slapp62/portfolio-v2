@@ -6,7 +6,7 @@ import {
 
 const Social = () => {
   return (
-    <div className="mx-auto flex h-fit w-fit items-center justify-center gap-5">
+    <div className="flex h-fit w-fit justify-center gap-5">
       <a className="link-hover" href="mailto:slapp62@gmail.com">
         {<IconMail size={35} />}
       </a>
