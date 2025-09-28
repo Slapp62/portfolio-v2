@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import type { TProject, TProjectDescription } from '@/Types';
 import { Badge } from '../ui/badge';
+import { IconExternalLink } from '@tabler/icons-react';
 
 export const ProjectCard = (props: {
   projectData: TProject[];
@@ -43,11 +44,11 @@ export const ProjectCard = (props: {
             loading="lazy"
             src={project.image}
             alt={project.imageAlt}
-            className="h-[200px] w-full rounded-lg lg:mr-auto object-cover object-center lg:h-full lg:w-[200px]"
+            className="h-[150px] w-full rounded-lg lg:mr-auto object-cover object-center lg:h-full lg:w-[200px]"
           />
 
           <div className="flex max-w-full lg:mr-auto flex-col items-center gap-2 p-1 text-center">
-            <h4 className="text-sm md:text-lg">{project.title}</h4>
+            <h4 className="text-sm md:text-lg font-semibold">{project.title}</h4>
             <p className="max-w-[90%] text-xs md:flex md:text-sm">
               {project.description} 
             </p>
@@ -60,9 +61,16 @@ export const ProjectCard = (props: {
 
             <a
             onClick={() => window.open(project.link, '_blank')}
-            className="cursor-pointer font-bold text-emerald-200 hover:text-emerald-500 duration-300 lg:text-md rounded-xl text-sm">
-            View Project
+            className="flex gap-2 items-center cursor-pointer font-bold text-emerald-200 hover:text-emerald-500 duration-300 lg:text-md rounded-xl text-sm">
+              View Project {<IconExternalLink/>}
             </a>
+
+            {project.github && 
+            <a
+            onClick={() => window.open(project.github, '_blank')}
+            className="flex gap-2 items-center cursor-pointer font-bold text-emerald-200 hover:text-emerald-500 duration-300 lg:text-md rounded-xl text-sm">
+              GitHub {<IconExternalLink/>}
+            </a>}
           </div>
 
           

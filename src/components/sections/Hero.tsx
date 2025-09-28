@@ -61,7 +61,7 @@ export const Hero = () => {
           asChild
           className="px-20 py-5 mx-auto text-lg button-outline w-fit"
         >
-          <a href="./Simcha Lapp Resume 2025 (Updated).pdf" target="_blank">
+          <a href="./Simcha Lapp Resume (Updated 09.25).pdf" target="_blank">
             View Resume
           </a>
         </Button>

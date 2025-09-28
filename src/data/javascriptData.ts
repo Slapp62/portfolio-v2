@@ -75,15 +75,15 @@ export const jsProjects = [
     link: '/projects/Javascript Projects/Memory Game/index.html',
     tech: ['HTML', 'CSS', 'JavaScript']
   },
-  {
-    id: 'calendar',
-    title: 'Family Purity Calendar',
-    description: 'Under Development.',
-    image: './javascript-images/calendar.jpg',
-    imageAlt: 'calendar',
-    link: '/projects/Javascript Projects/Mikvah Calendar/index.html',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-  },
+  // {
+  //   id: 'calendar',
+  //   title: 'Family Purity Calendar',
+  //   description: 'Under Development.',
+  //   image: './javascript-images/calendar.jpg',
+  //   imageAlt: 'calendar',
+  //   link: '/projects/Javascript Projects/Mikvah Calendar/index.html',
+  //   tech: ['HTML', 'CSS', 'JavaScript'],
+  // },
   {
     id: 'calculator',
     title: 'Calculator',

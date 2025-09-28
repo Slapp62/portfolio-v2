@@ -57,42 +57,42 @@ export const htmlProjects = [
     link: '/projects/HTML_CSS Projects/Crypto_Project/index.html',
     tech: ['HTML', 'CSS', 'Bootstrap']
   },
-  {
-    id: 'coffee',
-    title: 'Coffee Coupon Sign Up',
-    description:
-      'A clean and beautiful sign up to receive a coupon for a free coffee.',
-    image: './htmlcss-images/Coffee.png',
-    imageAlt: 'coffee mug',
-    link: '/projects/HTML_CSS Projects/Coffee_Project/index.html',
-    tech: ['HTML', 'CSS']
-  },
-  {
-    id: 'travel',
-    title: 'Travel Agency Contact Page',
-    description: 'Beautiful and elegant landing page for a travel agency.',
-    image: './htmlcss-images/Rectangle 506-1.png',
-    imageAlt: 'forest',
-    link: '/projects/HTML_CSS Projects/Travel_Project/index.html',
-    tech: ['HTML', 'CSS']
-  },
-  {
-    id: 'basketball',
-    title: 'Basketball League Login Page',
-    description:
-      'A youthful and fun login page for a summer basketball league.',
-    image: './htmlcss-images/basketball.jpg',
-    imageAlt: 'basketball hoop',
-    link: '/projects/HTML_CSS Projects/Basketball_Project/index.html',
-    tech: ['HTML', 'CSS']
-  },
-  {
-    id: 'zoo',
-    title: 'Zoo Newsletter',
-    description: 'An interesting and outdoorsy newsletter sign up for a zoo.',
-    image: './htmlcss-images/tiger.jpg',
-    imageAlt: 'tiger',
-    link: '/projects/HTML_CSS Projects/Zoo_Project/index.html',
-    tech: ['HTML', 'CSS']  
-  },
+  // {
+  //   id: 'coffee',
+  //   title: 'Coffee Coupon Sign Up',
+  //   description:
+  //     'A clean and beautiful sign up to receive a coupon for a free coffee.',
+  //   image: './htmlcss-images/Coffee.png',
+  //   imageAlt: 'coffee mug',
+  //   link: '/projects/HTML_CSS Projects/Coffee_Project/index.html',
+  //   tech: ['HTML', 'CSS']
+  // },
+  // {
+  //   id: 'travel',
+  //   title: 'Travel Agency Contact Page',
+  //   description: 'Beautiful and elegant landing page for a travel agency.',
+  //   image: './htmlcss-images/Rectangle 506-1.png',
+  //   imageAlt: 'forest',
+  //   link: '/projects/HTML_CSS Projects/Travel_Project/index.html',
+  //   tech: ['HTML', 'CSS']
+  // },
+  // {
+  //   id: 'basketball',
+  //   title: 'Basketball League Login Page',
+  //   description:
+  //     'A youthful and fun login page for a summer basketball league.',
+  //   image: './htmlcss-images/basketball.jpg',
+  //   imageAlt: 'basketball hoop',
+  //   link: '/projects/HTML_CSS Projects/Basketball_Project/index.html',
+  //   tech: ['HTML', 'CSS']
+  // },
+  // {
+  //   id: 'zoo',
+  //   title: 'Zoo Newsletter',
+  //   description: 'An interesting and outdoorsy newsletter sign up for a zoo.',
+  //   image: './htmlcss-images/tiger.jpg',
+  //   imageAlt: 'tiger',
+  //   link: '/projects/HTML_CSS Projects/Zoo_Project/index.html',
+  //   tech: ['HTML', 'CSS']  
+  // },
 ];

@@ -12,9 +12,10 @@ export const fullStackProjects = [
     title: 'Business Directory',
     description:
       'A website allowing business owners to advertise their company and services and allowing customers to create a list of their favorite companies.',
-    image: './mernStackSite.png',
-    imageAlt: 'equations',
+    image: './mern-images/mernStackSite.png',
+    imageAlt: 'mernStackSite',
     link: 'https://mernstackproject-client.onrender.com/',
+    github: 'https://github.com/Slapp62/mernStackProject',
     tech: ['HTML', 'CSS', 'JavaScript', 'MantineUI', 'Joi', 'Node.js', 'Express', 'React', 'MongoDB'],
   },
 ];
