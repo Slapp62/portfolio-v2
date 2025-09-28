@@ -3,12 +3,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(100deg, rgb(2, 9, 19), rgb(0, 0, 0));
+  
 }
 
 @theme inline {
