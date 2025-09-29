@@ -31,7 +31,7 @@ export const Hero = () => {
           <h2 className="text-center text-lg font-semibold text-indigo-300 lg:text-start lg:text-xl">
             Full Stack Web Developer
           </h2>
-          <ul className="flex w-[90%] flex-col gap-3 text-xs leading-7 text-zinc-200 lg:text-sm">
+          <ul className="flex lg:w-[90%] w-full flex-col gap-3 text-xs leading-7 text-zinc-200 lg:text-sm lg:text-start text-center">
             <li>
               I am a junior full stack web developer who enjoys solving problems
               and pushing my limits. I focus on building useful applications

@@ -9,10 +9,10 @@ function App() {
   return (
     <div
       id="app"
-      className="flex flex-col justify-center gap-10 lg:max-w-full lg:flex-row"
+      className="mx-auto flex flex-col justify-center lg:gap-5 gap-20 3xl:w-[80%] lg:max-w-[90%] lg:flex-row"
     >
       <Hero />
-      <div className="mx-auto flex max-w-[90%] flex-col gap-10 lg:mx-0 lg:mt-15 lg:ml-10 lg:w-[40%]">
+      <div className="mx-auto flex max-w-[90%] flex-col gap-10 lg:mx-0 lg:mt-15 lg:ml-10 lg:w-[50%]">
         <ProjectSection />
         <Contact />
         <Button className="mx-auto w-fit px-10">
