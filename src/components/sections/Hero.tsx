@@ -45,7 +45,7 @@ export const Hero = () => {
               stack website.
             </li>
             <li>
-              My next project will be a website that can be launched to the
+              I plan for my next project to be a website that can be launched to the
               public and provide real value to users.
             </li>
           </ul>
