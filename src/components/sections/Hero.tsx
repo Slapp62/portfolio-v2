@@ -48,11 +48,6 @@ export const Hero = () => {
               My next project will be a website that can be launched to the
               public and provide real value to users.
             </li>
-            <li>
-              My current skills include: HTML, CSS, Javascript, Typescript,
-              React, Redux, MantineUI, shadcn/ui, TailwindCSS, Node.js, Express,
-              MongoDB, and Mongoose.
-            </li>
           </ul>
         </div>
 
